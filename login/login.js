@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const savedPass = localStorage.getItem("passSaved");
 
         if (inputUser === savedUser && inputPass === savedPass) {
+
+            sessionStorage.setItem("sesionActiva", "true");
             Swal.fire({
                 title: "¡Bienvenido/a de vuelta!",
                 icon: "success",

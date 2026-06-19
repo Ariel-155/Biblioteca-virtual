@@ -12,6 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+    if (sessionStorage.getItem("sesionActiva") !== "true") {
+        window.location.href = "login/login.html";
+    }
+    </script>
 </head>
 
 <body>
@@ -28,6 +33,7 @@
                 <li><a href="#prestamos">Préstamos</a></li>
                 <li><a href="contactos.html">Contactos</a></li>
                 <li><a class="login-btn" href="login/login.html">Iniciar Sesión</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
             </ul>
         </nav>
     </header>
